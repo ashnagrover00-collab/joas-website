@@ -14,7 +14,7 @@ const stats = [
     {
         icon: <Users size={32} />,
         number: "100+",
-        title: "Business Workflows"
+        title: "Business Workflows    "
     },
     {
         icon: <Clock size={32} />,
