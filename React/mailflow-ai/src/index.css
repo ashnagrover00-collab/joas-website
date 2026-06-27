@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #050816;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Background Glow */
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  left: -250px;
+  top: -250px;
+  border-radius: 50%;
+  background: #2563eb;
+  filter: blur(180px);
+  opacity: .15;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 650px;
+  height: 650px;
+  right: -250px;
+  bottom: -250px;
+  border-radius: 50%;
+  background: cyan;
+  filter: blur(200px);
+  opacity: .12;
+  z-index: -2;
+}
+
+/* Scroll Reveal */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all .8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Floating Animation */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
+}
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Gradient Text */
+
+.gradient-text {
+
+  background: linear-gradient(
+    90deg,
+    #60a5fa,
+    #22d3ee
+  );
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glass */
+
+.glass {
+
+  background: rgba(255,255,255,.04);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+}
+
+/* Button Hover */
+
+button {
+
+  transition: .3s;
+
+}
+
+button:hover {
+
+  transform: translateY(-3px);
+
+}
+
+/* Links */
+
+a {
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
