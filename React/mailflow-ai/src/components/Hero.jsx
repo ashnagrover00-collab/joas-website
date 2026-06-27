@@ -11,7 +11,7 @@ export default function Hero() {
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  setLoading(true);
+  setLoading(true);  
 
   const form = new FormData(e.target);
 
@@ -43,7 +43,7 @@ const handleSubmit = async (e) => {
 
   return (
     <>
-        <section
+        <section   
           id="home"
            className="relative min-h-screen flex items-start  overflow-hidden bg-[#050816]"
         >  
