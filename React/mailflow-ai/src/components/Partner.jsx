@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   CheckCircle2,
   Link2,
   GraduationCap,
@@ -183,11 +182,7 @@ export default function Partner() {
                 {text}
                 </p>
 
-                <button className="mt-8 w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center group-hover:translate-x-2 transition self-start">
-
-                  <ArrowRight size={18} />
-
-                </button>
+                
 
               </div>
 
