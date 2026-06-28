@@ -154,3 +154,14 @@ a {
   color: inherit;
 
 }
+/* Outer ring radius = 620/2 = 310px */
+@keyframes orbitOuter {
+  from { transform: rotate(0deg) translateY(-310px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateY(-310px) rotate(-360deg); }
+}
+
+/* Inner ring radius = (620 - 80) / 2 = 270px  (inset-10 = 40px each side) */
+@keyframes orbitInner {
+  from { transform: rotate(0deg) translateY(-270px) rotate(0deg); }
+  to   { transform: rotate(-360deg) translateY(-270px) rotate(360deg); }
+}
