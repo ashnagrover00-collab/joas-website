@@ -9,7 +9,7 @@ export default function Hero() {
   const [success, setSuccess] = useState(false);
 
 const handleSubmit = async (e) => {
-  e.preventDefault();
+  e.preventDefault();  
 
   setLoading(true);  
 
@@ -111,7 +111,7 @@ const handleSubmit = async (e) => {
 
             </p>
 
-            <div className="flex gap-5 mt-12">
+            <div className="mt-10">
 
               <button
                 onClick={() => setOpen(true)}
@@ -120,13 +120,7 @@ const handleSubmit = async (e) => {
                 Book Consultation
               </button>
 
-              <button className="px-8 py-4 rounded-full border border-white/20 hover:bg-white hover:text-black transition flex items-center gap-2">
-
-                Explore
-
-                <ArrowRight size={18} />
-
-              </button>
+              
 
             </div>
 
@@ -235,9 +229,15 @@ const handleSubmit = async (e) => {
       {/* CONTACT POPUP */}
 
       {open && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-6">
+        <div
+  className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-6"
+  onClick={() => setOpen(false)}
+>
 
-          <div className="relative w-full max-w-2xl rounded-[32px] border border-cyan-500/20 bg-[#0B1120] p-10 shadow-[0_0_60px_rgba(34,211,238,.15)]">
+          <div
+  className="relative w-full max-w-lg rounded-[28px] border border-cyan-500/20 bg-[#0B1120] p-8 shadow-[0_0_60px_rgba(34,211,238,.15)]"
+  onClick={(e) => e.stopPropagation()}
+>
 
             <button
               onClick={() => setOpen(false)}
@@ -250,7 +250,7 @@ const handleSubmit = async (e) => {
               CONTACT US
             </p>
 
-            <h2 className="text-5xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
               Ready To Start?
             </h2>
 
@@ -270,7 +270,7 @@ const handleSubmit = async (e) => {
                 name="name"
                 placeholder="Full Name"
                 required
-                className="w-full rounded-xl bg-[#111827] border border-white/10 p-5 outline-none focus:border-cyan-400 transition"
+                className="w-full rounded-xl bg-[#111827] border border-white/10 p-4 outline-none focus:border-cyan-400 transition"
               />
 
               <input
@@ -278,7 +278,7 @@ const handleSubmit = async (e) => {
                 name="email"
                 placeholder="Business Email"
                 required
-                className="w-full rounded-xl bg-[#111827] border border-white/10 p-5 outline-none focus:border-cyan-400 transition"
+                className="w-full rounded-xl bg-[#111827] border border-white/10 p-4 outline-none focus:border-cyan-400 transition"
               />
 
               <input
@@ -286,7 +286,7 @@ const handleSubmit = async (e) => {
                 name="company"
                 placeholder="Company Name"
                 required
-                className="w-full rounded-xl bg-[#111827] border border-white/10 p-5 outline-none focus:border-cyan-400 transition"
+                className="w-full rounded-xl bg-[#111827] border border-white/10 p-4 outline-none focus:border-cyan-400 transition"
               />
 
               <textarea
@@ -294,7 +294,7 @@ const handleSubmit = async (e) => {
                 name="message"
                 placeholder="Tell us about your project..."
                 required
-                className="w-full rounded-xl bg-[#111827] border border-white/10 p-5 outline-none resize-none focus:border-cyan-400 transition"
+                className="w-full rounded-xl bg-[#111827] border border-white/10 p-4 outline-none resize-none focus:border-cyan-400 transition"
               />
 
               <button
