@@ -58,7 +58,7 @@ export default function Partner() {
           <div>
 
             <div className="inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-6 py-3 text-blue-400 uppercase tracking-[3px] text-sm font-semibold">
-              Official Partnership
+              Global Partnership
             </div>
 
             <h2 className="text-6xl font-bold mt-8 leading-tight">

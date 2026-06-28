@@ -66,7 +66,7 @@ const handleSubmit = async (e) => {
 
             <div className="inline-flex items-center gap-1 px-5 py-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300 text-sm mb-8">
 
-             <span>Official Partner of</span>
+             <span>Global Partner of</span>
 
             <a
               href="https://lulal.ai/"

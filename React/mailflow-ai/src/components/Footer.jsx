@@ -37,7 +37,7 @@ export default function Footer() {
               className="flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition"
             >
               <Globe size={20} />
-              Official Partner of Lulal AI
+              Global Partner of Lulal AI
               <ExternalLink size={16} />
             </a>
 

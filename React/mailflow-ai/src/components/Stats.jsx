@@ -7,20 +7,20 @@ const stats = [
         title: "Less Manual Work"
     },
     {
-        icon: <Bot size={32} />,
-        number: "24/7",
-        title: "AI Availability"
-    },
+    icon: <Bot size={32} />,
+    number: "100%",
+    title: "Private & Secure Deployments"
+  },
     {
         icon: <Users size={32} />,
         number: "100+",
         title: "Business Workflows    "
     },
     {
-        icon: <Clock size={32} />,
-        number: "<30",
-        title: "Days To Deploy"
-    }
+     icon: <Clock size={32} />,
+    number: "24/7",
+    title: "Continuous Business Intelligence"
+  }
 ];
 
 export default function Stats() {

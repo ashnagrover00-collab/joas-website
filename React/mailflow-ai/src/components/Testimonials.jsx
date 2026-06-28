@@ -1,20 +1,24 @@
-import { Star } from "lucide-react";
+import {
+  ShieldCheck,
+  Handshake,
+  Target,
+} from "lucide-react";
 
-const testimonials = [
+const pillars = [
   {
-    name: "Enterprise Client",
-    role: "Operations Director",
-    text: "Joas AI helped us identify practical AI opportunities instead of selling unnecessary tools. The implementation was smooth and focused on measurable business outcomes.",
+    icon: <Target size={34} />,
+    title: "Business Before Technology",
+    text: "Every engagement begins by understanding your business objectives, existing workflows and operational challenges before recommending any AI solution.",
   },
   {
-    name: "Technology Lead",
-    role: "IT Manager",
-    text: "The consulting process gave us a clear roadmap for AI adoption. Everything was structured, secure, and seamlessly integrated into our existing workflows.",
+    icon: <ShieldCheck size={34} />,
+    title: "Responsible AI Adoption",
+    text: "Security, privacy and scalability are considered from day one so every implementation aligns with enterprise expectations and long-term growth.",
   },
   {
-    name: "Business Owner",
-    role: "Founder",
-    text: "Instead of generic AI demonstrations, we received solutions tailored specifically to our business, helping us automate repetitive work and improve efficiency.",
+    icon: <Handshake size={34} />,
+    title: "A Long-Term Partner",
+    text: "Our goal isn't simply delivering software. We work alongside your organization to help AI become a practical part of everyday business operations.",
   },
 ];
 
@@ -26,63 +30,42 @@ export default function Testimonials() {
 
         <div className="text-center mb-20">
 
-          <p className="uppercase tracking-[6px] text-blue-400 text-sm">
-            TESTIMONIALS
+          <p className="uppercase tracking-[6px] text-cyan-400 text-sm">
+            THE JOAS AI DIFFERENCE
           </p>
 
           <h2 className="text-5xl font-bold mt-5">
-            What Our
-            <span className="text-blue-400"> Clients Say</span>
+            Why Organizations
+            <span className="text-cyan-400"> Choose JOAS AI</span>
           </h2>
 
-          <p className="mt-6 text-gray-400 text-lg max-w-2xl mx-auto leading-8">
-            Trusted by organizations adopting AI through consulting,
-            automation, deployment and long-term support.
+          <p className="mt-6 text-gray-400 text-lg leading-8 max-w-3xl mx-auto">
+            Successful AI adoption is about more than selecting the right
+            technology. It requires a clear strategy, careful implementation
+            and a partner committed to your long-term success.
           </p>
 
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
 
-          {testimonials.map((item, index) => (
+          {pillars.map((item, index) => (
 
             <div
               key={index}
-              className="rounded-[30px] border border-white/10 bg-[#101828] p-10 hover:border-blue-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)]"
+              className="rounded-[32px] border border-white/10 bg-[#101828] p-10 hover:border-cyan-400/40 hover:-translate-y-2 transition-all duration-300"
             >
 
-              {/* Stars */}
-
-              <div className="flex gap-1 mb-6">
-
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={18}
-                    className="fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-
+              <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                {item.icon}
               </div>
 
-              {/* Review */}
-
-              <p className="text-gray-300 leading-8 italic">
-                "{item.text}"
-              </p>
-
-              {/* Divider */}
-
-              <div className="w-16 h-[2px] bg-gradient-to-r from-blue-500 to-cyan-400 mt-8 mb-8 rounded-full"></div>
-
-              {/* Client */}
-
-              <h3 className="text-xl font-semibold">
-                {item.name}
+              <h3 className="mt-8 text-2xl font-bold">
+                {item.title}
               </h3>
 
-              <p className="text-blue-400 mt-1">
-                {item.role}
+              <p className="mt-5 text-gray-400 leading-8">
+                {item.text}
               </p>
 
             </div>
