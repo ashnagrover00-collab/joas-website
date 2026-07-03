@@ -14,20 +14,24 @@ export default function Hero() {
     const data = Object.fromEntries(form);
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_sslbt17",
+        "template_mc3c09e",
         {
           name: data.name,
           email: data.email,
           company: data.company,
           message: data.message,
         },
-        "YOUR_PUBLIC_KEY"
+        "h1KwO6Um28Z6zIKfs"
       );
       setSuccess(true);
       e.target.reset();
     } catch (err) {
-      alert("Failed to send. Please try again.");
+      // 1. Log the actual error object to the browser console
+      console.error("EmailJS Error:", err)  ;
+      
+      // 2. Make the alert more descriptive if EmailJS returned a text error
+      alert(`Failed to send: ${err.text || err.message || "Unknown error"}`);
     }
     setLoading(false);
   };

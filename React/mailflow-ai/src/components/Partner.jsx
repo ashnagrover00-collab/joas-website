@@ -63,7 +63,7 @@ export default function Partner() {
 
             <h2 className="text-6xl font-bold mt-8 leading-tight">
 
-              Official Partner of
+              Global Partner of
 
               <a
                 href="https://lulal.ai/"

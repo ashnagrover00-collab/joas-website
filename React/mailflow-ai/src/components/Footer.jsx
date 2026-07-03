@@ -70,7 +70,7 @@ export default function Footer() {
           </p>
 
           <p>
-            Official Partner of{" "}
+            Global Partner of{" "}
             <a
               href="https://lulal.ai/"
               target="_blank"
