@@ -74,11 +74,11 @@ export default function Hero() {
       >
         {/* Background Glow */}
         <div className="absolute inset-0">
-          <div className="absolute -top-64 -left-64 w-[700px] h-[700px] rounded-full bg-blue-600/20 blur-[180px]" />
-          <div className="absolute -bottom-64 -right-64 w-[700px] h-[700px] rounded-full bg-cyan-500/20 blur-[200px]" />
+          <div className="absolute -top-64 -left-64w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-[700px] lg:h-[700px] rounded-full bg-blue-600/20 blur-[180px]" />
+          <div className="absolute -bottom-64 -right-64 w-[350px] h-[350px] md:w-[500px] md:h-[500px] lg:w-[700px] lg:h-[700px] rounded-full bg-cyan-500/20 blur-[200px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 pt-24 grid lg:grid-cols-2 gap-20 items-center">
+        <div className="relative z-10 max-w-7xl mx-auto w-full px-5 sm:px-6 lg:px-8 pt-20 lg:pt-24 grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* LEFT SIDE */}
           <div>
@@ -91,7 +91,7 @@ export default function Hero() {
             </div>
 
             <motion.h1
-              className="text-4xl lg:text-6xl font-bold leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -103,7 +103,7 @@ export default function Hero() {
               <span className="block mt-2">Starts Here</span>
             </motion.h1>
 
-            <p className="mt-8 text-lg text-gray-300 leading-8 max-w-lg">
+            <p className="mt-8 text-base sm:text-lg text-gray-300 leading-8 max-w-lg">
               Deploy AI assistants that answer questions, automate repetitive
               tasks, analyze documents, support your teams and integrate
               seamlessly into your business—giving you a reliable digital
@@ -113,7 +113,7 @@ export default function Hero() {
             <div className="mt-10">
               <button
                 onClick={() => setOpen(true)}
-                className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold transition hover:scale-105"
+                className="px-7 py-3.5 sm:px-8 sm:py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold transition hover:scale-105"
               >
                 Book Consultation
               </button>
@@ -121,8 +121,21 @@ export default function Hero() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="flex justify-center items-center px-6">
-            <div className="relative w-[680px] h-[680px] flex items-center justify-center">
+          <div className="flex justify-center items-center px-0 sm:px-6">
+            <div
+  className="
+  relative
+  w-[320px]
+  h-[320px]
+  sm:w-[420px]
+  sm:h-[420px]
+  md:w-[520px]
+  md:h-[520px]
+  lg:w-[680px]
+  lg:h-[680px]
+  flex items-center justify-center
+"
+>
 
               {/* OUTER RING — spins CW 48s (Slower) */}
               <div
@@ -141,20 +154,20 @@ export default function Hero() {
 
               {/* PANEL — Expanded slightly to inset-[108px] */}
               <div className="absolute inset-[108px] rounded-full border border-cyan-400/40 bg-[#09111f]/90 backdrop-blur-xl shadow-[0_0_80px_rgba(34,211,238,.15)]">
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-14">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 sm:px-8 md:px-10 lg:px-14">
                   <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-white">Your Personal</h2>
-                    <h2 className="text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">AI Assistant</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">Your Personal</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">AI Assistant</h2>
                   </div>
                   <div className="w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-6" />
                   <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-white">Everything</h2>
-                    <h2 className="text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">You Need</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">Everything</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">You Need</h2>
                   </div>
                   <div className="w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-6" />
                   <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-white">One Click</h2>
-                    <h2 className="text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Away</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">One Click</h2>
+                    <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Away</h2>
                   </div>
                 </div>
               </div>
