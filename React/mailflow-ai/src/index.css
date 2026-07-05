@@ -1,7 +1,24 @@
 @import "tailwindcss";
 
+/* Tailwind v4 Theme Configuration */
+@theme {
+  /* Restores default layout behavior while cleanly adjusting ONLY text sizing down */
+  --font-size-xs: 0.75rem;    /* ~12px */
+  --font-size-sm: 0.8125rem;  /* ~13px (Down from 14px) */
+  --font-size-base: 0.875rem; /* ~14px (Down from 16px) */
+  --font-size-lg: 1.0rem;     /* ~16px (Down from 18px) */
+  --font-size-xl: 1.125rem;   /* ~18px (Down from 20px) */
+  --font-size-2xl: 1.35rem;   /* ~21px (Down from 24px) */
+  --font-size-3xl: 1.625rem;  /* ~26px (Down from 30px) */
+  --font-size-4xl: 2.0rem;    /* ~32px (Down from 36px) */
+  --font-size-5xl: 2.625rem;  /* ~42px (Down from 48px) */
+  --font-size-6xl: 3.375rem;  /* ~54px (Down from 60px) */
+}
+
 html {
   scroll-behavior: smooth;
+  /* Font size is back to browser default (100%), spacing is perfectly fixed! */
+  font-size: 100%; 
 }
 
 body {
@@ -22,7 +39,6 @@ body {
 }
 
 /* Scrollbar */
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -41,7 +57,6 @@ body {
 }
 
 /* Background Glow */
-
 body::before {
   content: "";
   position: fixed;
@@ -71,7 +86,6 @@ body::after {
 }
 
 /* Scroll Reveal */
-
 .hidden {
   opacity: 0;
   transform: translateY(60px);
@@ -84,21 +98,16 @@ body::after {
 }
 
 /* Floating Animation */
-
 @keyframes float {
-
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(-12px);
   }
-
   100% {
     transform: translateY(0px);
   }
-
 }
 
 .float {
@@ -106,61 +115,45 @@ body::after {
 }
 
 /* Gradient Text */
-
 .gradient-text {
-
   background: linear-gradient(
     90deg,
     #60a5fa,
     #22d3ee
   );
-
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Glass */
-
 .glass {
-
   background: rgba(255,255,255,.04);
-
   backdrop-filter: blur(20px);
-
   border: 1px solid rgba(255,255,255,.08);
-
 }
 
 /* Button Hover */
-
 button {
-
   transition: .3s;
-
 }
 
 button:hover {
-
   transform: translateY(-3px);
-
 }
 
 /* Links */
-
 a {
-
   text-decoration: none;
-
   color: inherit;
-
 }
+
 /* Outer ring radius = 620/2 = 310px */
 @keyframes orbitOuter {
   from { transform: rotate(0deg) translateY(-310px) rotate(0deg); }
   to   { transform: rotate(360deg) translateY(-310px) rotate(-360deg); }
 }
 
-/* Inner ring radius = (620 - 80) / 2 = 270px  (inset-10 = 40px each side) */
+/* Inner ring radius = (620 - 80) / 2 = 270px */
 @keyframes orbitInner {
   from { transform: rotate(0deg) translateY(-270px) rotate(0deg); }
   to   { transform: rotate(-360deg) translateY(-270px) rotate(360deg); }
