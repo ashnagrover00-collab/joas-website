@@ -76,9 +76,10 @@ export default function Hero() {
         @keyframes spinCCW { from{transform:rotate(0deg)}  to{transform:rotate(-360deg)} }
       `}</style>
 
+      {/* Changed flex items-start to items-center to close the layout gap */}
       <section
         id="home"
-        className="relative min-h-screen flex items-start overflow-hidden bg-[#050816] pb-16 lg:pb-0"
+        className="relative min-h-screen flex items-center overflow-hidden bg-[#050816] py-16 lg:py-0"
       >
         {/* Background Glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -86,9 +87,10 @@ export default function Hero() {
           <div className="absolute -bottom-32 -right-32 lg:-bottom-64 lg:-right-64 w-[350px] lg:w-[700px] h-[350px] lg:h-[700px] rounded-full bg-cyan-500/20 blur-[100px] lg:blur-[200px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-28 lg:pt-36 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        {/* Adjusted padding top (pt) slightly down so content meets the navbar perfectly */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-24 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
 
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE CONTENT */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             <div className="inline-flex items-center gap-1 px-5 py-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300 text-xs sm:text-sm mb-6 lg:mb-8">
               <span>Global Partner of</span>
@@ -209,7 +211,7 @@ export default function Hero() {
         </div>
       </section>
 
-      {/* CONTACT POPUP */}
+      {/* CONTACT POPUP MODAL */}
       {open && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 sm:p-6 overflow-y-auto"

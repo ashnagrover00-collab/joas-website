@@ -27,6 +27,19 @@ body {
   background: #050816;
   color: white;
   overflow-x: hidden;
+
+  /* GLOBAL VISUAL ZOOM FIX */
+  zoom: 90%; /* Works beautifully in Chrome, Edge, and Safari */
+}
+
+/* Fallback for Firefox (Firefox doesn't support the standard 'zoom' property yet) */
+@supports not (zoom: 90%) {
+  html {
+    transform: scale(0.9);
+    transform-origin: top center;
+    width: 111.11%; /* Counteracts the shrinkage so your layout still spans 100% width */
+    height: 111.11%;
+  }
 }
 
 * {
