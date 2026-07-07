@@ -16,13 +16,13 @@ export default function Footer() {
             <h2 className="text-2xl sm:text-3xl font-bold tracking-wide">
               JOAS AI
             </h2>
-            <p className="mt-4 text-gray-400 text-sm sm:text-base leading-6 sm:leading-8">
+            <p className="mt-4 text-gray-400 text-sm sm:text-base leading-6 sm:leading-7">
               Helping organizations adopt Enterprise AI through consulting,
               deployment, implementation, training and long-term support.
             </p>
           </div>
 
-          {/* RIGHT CONTAINER USEFUL LINKS */}
+          {/* RIGHT CONTAINER LINKS */}
           <div className="flex flex-col gap-4 sm:gap-5 w-full sm:w-auto items-center lg:items-start">
             <a
               href="https://lulal.ai/"

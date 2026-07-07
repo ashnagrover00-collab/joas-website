@@ -76,7 +76,6 @@ export default function Hero() {
         @keyframes spinCCW { from{transform:rotate(0deg)}  to{transform:rotate(-360deg)} }
       `}</style>
 
-      {/* Changed flex items-start to items-center to close the layout gap */}
       <section
         id="home"
         className="relative min-h-screen flex items-center overflow-hidden bg-[#050816] py-16 lg:py-0"
@@ -87,7 +86,6 @@ export default function Hero() {
           <div className="absolute -bottom-32 -right-32 lg:-bottom-64 lg:-right-64 w-[350px] lg:w-[700px] h-[350px] lg:h-[700px] rounded-full bg-cyan-500/20 blur-[100px] lg:blur-[200px]" />
         </div>
 
-        {/* Adjusted padding top (pt) slightly down so content meets the navbar perfectly */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-24 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
 
           {/* LEFT SIDE CONTENT */}
@@ -113,11 +111,12 @@ export default function Hero() {
               <span className="block mt-2">Starts Here</span>
             </motion.h1>
 
-            <p className="mt-6 lg:mt-8 text-base sm:text-lg text-gray-300 leading-7 sm:leading-8 max-w-lg mx-auto lg:mx-0">
-              Deploy AI assistants that answer questions, automate repetitive
-              tasks, analyze documents, support your teams and integrate
-              seamlessly into your business—giving you a reliable digital
-              workforce that works 24/7.
+            <p className="mt-6 lg:mt-8 text-base sm:text-lg font-medium text-cyan-400 leading-7 max-w-lg mx-auto lg:mx-0">
+              Enterprise AI for every employee, every browser and every workflow.
+            </p>
+
+            <p className="mt-3 text-base text-gray-300 leading-7 max-w-lg mx-auto lg:mx-0">
+              Every task. Another tab. Another AI tool. Tired of it? JOAS AI brings powerful AI into the tools your team already uses—helping you write emails, analyze documents, automate tasks and work faster without changing the way you work. Choose the AI model that fits your business, from leading LLMs to your own private AI.
             </p>
 
             <div className="mt-8 lg:mt-10">
@@ -153,18 +152,18 @@ export default function Hero() {
               <div className="absolute inset-[52px] lg:inset-[108px] rounded-full border border-cyan-400/40 bg-[#09111f]/90 backdrop-blur-xl shadow-[0_0_40px_rgba(34,211,238,.1)] lg:shadow-[0_0_80px_rgba(34,211,238,.15)]">
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-14">
                   <div>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold text-white">Your Personal</h2>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">AI Assistant</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-3xl font-bold text-white tracking-wide">One Platform</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Every Workflow</h2>
                   </div>
                   <div className="w-12 lg:w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-1.5 lg:my-6" />
                   <div>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold text-white">Everything</h2>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">You Need</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-3xl font-bold text-white tracking-wide">No Switching</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Click</h2>
                   </div>
                   <div className="w-12 lg:w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-1.5 lg:my-6" />
                   <div>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold text-white">One Click</h2>
-                    <h2 className="text-xs sm:text-base lg:text-4xl font-bold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Away</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-2xl font-bold text-gray-300 uppercase tracking-widest">We Handle</h2>
+                    <h2 className="text-xs sm:text-xs lg:text-3xl font-black mt-0.5 lg:mt-1 bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">The Rest</h2>
                   </div>
                 </div>
               </div>
@@ -226,8 +225,7 @@ export default function Hero() {
             <p className="uppercase tracking-[4px] text-cyan-400 text-xs sm:text-sm mb-2 sm:mb-3">CONTACT US</p>
             <h2 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-3">Ready To Start?</h2>
             <p className="text-gray-400 text-sm sm:text-base leading-6 sm:leading-7 mb-6 sm:mb-10">
-              Tell us about your business and we'll help you discover how AI
-              can automate workflows, improve productivity and accelerate growth.
+              Tell us about your business and we'll help you discover how AI can automate workflows, improve productivity and accelerate growth.
             </p>
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
               <input type="text" name="name" placeholder="Full Name" required

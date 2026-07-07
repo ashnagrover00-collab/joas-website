@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const steps = [
   {
     number: "01",
@@ -49,7 +47,7 @@ export default function Timeline() {
         {/* Timeline Content */}
         <div className="relative mt-16 md:mt-24">
           
-          {/* HORIZONTAL CONNECTOR LINE - Visible on Desktop Only */}
+          {/* HORIZONTAL CONNECTOR LINE - Desktop Only */}
           <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-[2px] bg-white/10 z-0" />
 
           {/* Grid Layout Container */}
@@ -58,7 +56,7 @@ export default function Timeline() {
               <div key={step.number} className="text-center group max-w-sm mx-auto lg:max-w-none">
                 
                 {/* Numeric Badge Circle */}
-                <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 flex items-center justify-center text-xl sm:text-2xl font-bold shadow-[0_0_35px_rgba(0,212,255,0.45)] transition-transform duration-300 group-hover:-translate-y-2 group-hover:scale-105">
+                <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 flex items-center justify-center text-xl sm:text-2xl font-bold shadow-[0_0_35px_rgba(0,212,255,0.45)] transition-transform duration-300 group-hover:-translate-y-2 group-hover:scale-105 text-white">
                   {step.number}
                 </div>
 

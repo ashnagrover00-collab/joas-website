@@ -61,7 +61,7 @@ export default function Testimonials() {
               </h3>
 
               {/* Description Body */}
-              <p className="mt-4 text-gray-400 text-sm sm:text-base leading-6 sm:leading-8">
+              <p className="mt-4 text-gray-400 text-sm sm:text-base leading-6 sm:leading-7">
                 {item.text}
               </p>
             </div>

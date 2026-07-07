@@ -1,20 +1,20 @@
 export default function FAQ() {
   const faqs = [
     {
-      q: "What does Joas AI do?",
-      a: "We help businesses adopt Artificial Intelligence through consulting, deployment, automation and enterprise implementation."
+      q: "What does JOAS AI do?",
+      a: "JOAS AI embeds powerful enterprise AI workflows directly into the software, browsers, and platforms your teams use every day. We eliminate the need to switch tabs or manage multiple disconnected AI tools."
     },
     {
-      q: "Do you only sell software?",
-      a: "No. We focus on strategy, implementation, onboarding, training and long-term support."
+      q: "Which AI models can we use?",
+      a: "Our flexible multi-model gateway allows you to toggle seamlessly between leading foundational LLMs, or lock down access entirely to your company's own private, fine-tuned model to eliminate vendor lock-in."
     },
     {
-      q: "Is our data private?",
-      a: "Yes. Security and privacy remain central to every enterprise deployment."
+      q: "How is our data protected?",
+      a: "We ensure 100% data sovereignty. JOAS AI can be deployed via fully compliant secure cloud routing or as a complete on-premise installation, guaranteeing that your data remains entirely within your administrative control."
     },
     {
-      q: "Can AI integrate with existing software?",
-      a: "Yes. We help integrate AI into CRMs, ERPs, internal systems and business workflows."
+      q: "How long does deployment take?",
+      a: "Basic user onboarding and baseline deployment can take as little as 60 seconds. Custom parametric workflows and specific internal systems integrations are scoped and rolled out tailored directly to your operational footprint."
     }
   ];
 
@@ -42,7 +42,7 @@ export default function FAQ() {
               <h3 className="text-lg sm:text-xl font-semibold leading-snug">
                 {faq.q}
               </h3>
-              <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-8">
+              <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base leading-6 sm:leading-7">
                 {faq.a}
               </p>
             </div>

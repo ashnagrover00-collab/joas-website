@@ -17,16 +17,11 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Navigation - HIDDEN ON MOBILE/TABLETS, SHOWS ON DESKTOP */}
+        {/* Navigation */}
         <ul className="hidden lg:flex items-center gap-8 xl:gap-14 text-white text-[17px] font-medium ml-auto mr-10">
           <li>
-            <a href="#solutions" className="hover:text-cyan-400 transition">
-              Solutions
-            </a>
-          </li>
-          <li>
-            <a href="#partnership" className="hover:text-cyan-400 transition">
-              Partnership
+            <a href="#home" className="hover:text-cyan-400 transition">
+              Home
             </a>
           </li>
           <li>
@@ -44,12 +39,12 @@ export default function Navbar() {
         {/* CTA Button */}
         <a
           href="#contact"
-          className="hidden lg:flex ml-2 px-7 py-3 rounded-full text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:scale-105 transition"
+          className="hidden lg:flex ml-2 px-7 py-3 rounded-full text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:scale-105 transition font-semibold text-sm"
         >
-          Book Demo
+          Book Consultation
         </a>
 
-        {/* Menu Icon - SHOWS ON MOBILE ONLY */}
+        {/* Menu Icon - Mobile Only */}
         <button className="lg:hidden ml-auto text-white focus:outline-none" aria-label="Toggle Menu">
           <Menu size={28} />
         </button>

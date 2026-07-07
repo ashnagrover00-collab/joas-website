@@ -1,25 +1,25 @@
-import { TrendingUp, Users, Bot, Clock } from "lucide-react";
+import { ShieldCheck, Flashlight, Sliders, Eye } from "lucide-react";
 
 const stats = [
   {
-    icon: <TrendingUp size={32} />,
-    number: "70%",
-    title: "Less Manual Work"
-  },
-  {
-    icon: <Bot size={32} />,
+    icon: <ShieldCheck size={32} />,
     number: "100%",
-    title: "Private & Secure Deployments"
+    title: "Data Sovereignty"
   },
   {
-    icon: <Users size={32} />,
-    number: "100+",
-    title: "Business Workflows"
+    icon: <Flashlight size={32} />,
+    number: "60s",
+    title: "Onboarding Deployment"
   },
   {
-    icon: <Clock size={32} />,
-    number: "24/7",
-    title: "Continuous Business Intelligence"
+    icon: <Sliders size={32} />,
+    number: "∞",
+    title: "Custom Workflows"
+  },
+  {
+    icon: <Eye size={32} />,
+    number: "Full",
+    title: "Administrative Control"
   }
 ];
 
@@ -43,7 +43,7 @@ export default function Stats() {
                 {item.number}
               </h2>
 
-              <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base">
+              <p className="text-gray-400 mt-3 sm:mt-4 text-sm sm:text-base font-medium">
                 {item.title}
               </p>
             </div>

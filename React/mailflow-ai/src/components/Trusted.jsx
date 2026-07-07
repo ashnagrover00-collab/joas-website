@@ -1,32 +1,32 @@
 import {
-    ShieldCheck,
-    Building2,
-    Globe,
-    Cpu
+    MonitorPlay,
+    Layers,
+    ShieldAlert,
+    Sliders
 } from "lucide-react";
 
 export default function Trusted() {
 
     const items = [
         {
-            icon: <ShieldCheck size={28} />,
-            title: "Enterprise Security",
-            desc: "Privacy-first deployments with enterprise-grade protection."
+            icon: <MonitorPlay size={28} />,
+            title: "Works Everywhere",
+            desc: "Runs seamlessly across all major web browsers, Microsoft Outlook Desktop, Outlook Web, and the internal software tools your team uses daily."
         },
         {
-            icon: <Building2 size={28} />,
-            title: "Business Focused",
-            desc: "Solutions designed around business outcomes instead of hype."
+            icon: <Layers size={28} />,
+            title: "One Platform. Every AI Model",
+            desc: "Eliminate vendor lock-in. Switch between leading foundational models or lock it down to your own private AI from one flexible gateway."
         },
         {
-            icon: <Cpu size={28} />,
-            title: "Modern AI Stack",
-            desc: "Latest AI models integrated into real business workflows."
+            icon: <ShieldAlert size={28} />,
+            title: "Enterprise Deployment",
+            desc: "Fully compliant cloud routing or complete on-premise installation with enterprise-grade security and absolute data sovereignty."
         },
         {
-            icon: <Globe size={28} />,
-            title: "Global Technology",
-            desc: "World-class AI delivered with local implementation."
+            icon: <Sliders size={28} />,
+            title: "Built Around Your Business",
+            desc: "Custom parametric workflows, one-click automations, and an embedded AI workspace tailored specifically to your unique operational footprint."
         }
     ];
 
@@ -40,12 +40,10 @@ export default function Trusted() {
                         WHY JOAS AI
                     </p>
                     <h2 className="mt-4 text-3xl sm:text-5xl font-bold leading-tight">
-                        Built for Businesses.<br className="sm:hidden" /> Not Demos.
+                        Built Around Your Business.<br className="hidden sm:inline" /> Not The Other Way Around.
                     </h2>
                     <p className="text-gray-400 mt-4 md:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-7 sm:leading-8">
-                        We help organizations adopt AI in a practical,
-                        secure and scalable way through consulting,
-                        deployment and long-term partnership.
+                        We help organizations securely integrate enterprise AI into existing workflows—making work faster, smarter, and scalable without disrupting the way teams work.
                     </p>
                 </div>
 
