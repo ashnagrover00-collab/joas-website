@@ -1,28 +1,28 @@
 const steps = [
   {
     number: "01",
-    title: "Discovery",
-    desc: "Understand your business goals, workflows and challenges.",
+    title: "Discover",
+    desc: "We learn how your business works.",
   },
   {
     number: "02",
-    title: "AI Strategy",
-    desc: "Create a customized implementation roadmap.",
+    title: "Design",
+    desc: "We build the right AI strategy for your goals.",
   },
   {
     number: "03",
-    title: "Deployment",
+    title: "Deploy",
     desc: "Integrate enterprise AI into your existing ecosystem.",
   },
   {
     number: "04",
-    title: "Training",
-    desc: "Empower your teams to confidently adopt AI.",
+    title: "Adopt",
+    desc: "We train your teams for successful adoption.",
   },
   {
     number: "05",
-    title: "Continuous Support",
-    desc: "Optimization, monitoring and long-term partnership.",
+    title: "Grow",
+    desc: "We provide continuous support and optimization.",
   },
 ];
 
