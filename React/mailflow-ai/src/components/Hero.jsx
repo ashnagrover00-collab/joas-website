@@ -111,13 +111,13 @@ export default function Hero() {
               <span className="block mt-2">Starts Here</span>
             </motion.h1>
 
-            <p className="mt-6 lg:mt-8 text-base sm:text-lg font-medium text-cyan-400 leading-7 max-w-lg mx-auto lg:mx-0">
-              Enterprise AI for every employee, every browser and every workflow.
-            </p>
+            <p className="mt-6 lg:mt-8 mb-6 text-[22px] sm:text-[26px] font-bold text-cyan-400 leading-8 max-w-lg mx-auto lg:mx-0">
+            Every task. Another tab. Another AI tool. Tired of it?
+           </p>
 
-            <p className="mt-3 text-base text-gray-300 leading-7 max-w-lg mx-auto lg:mx-0">
-              Every task. Another tab. Another AI tool. Tired of it? JOAS AI brings powerful AI into the tools your team already uses—helping you write emails, analyze documents, automate tasks and work faster without changing the way you work. Choose the AI model that fits your business, from leading LLMs to your own private AI.
-            </p>
+            <p className="mt-3 text-[17px] sm:text-[18px] font-semibold text-gray-300 leading-7 max-w-lg mx-auto lg:mx-0">
+  JOAS AI brings powerful AI into the tools your team already uses—helping you write emails, analyze documents, automate tasks and work faster without changing the way you work. Choose the AI model that fits your business, from leading LLMs to your own private AI.
+</p>
 
             <div className="mt-8 lg:mt-10">
               <button
