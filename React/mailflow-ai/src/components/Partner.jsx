@@ -55,29 +55,31 @@ export default function Partner() {
 
           {/* LEFT CONTENT */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-5 py-2.5 text-blue-400 uppercase tracking-[2px] sm:tracking-[3px] text-xs sm:text-sm font-semibold">
-              Global Partnership
-            </div>
+            <div className="inline-flex items-center rounded-full border border-blue-500/30 bg-blue-500/10 px-5 py-2.5 text-white uppercase tracking-[2px] sm:tracking-[3px] text-xs sm:text-sm font-semibold">
+            Global Partnership
+          </div>
 
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold mt-6 leading-tight">
-              Global Partner of
+            {/* POWERED BY HEADING BLOCK */}
+            <h2 className="font-['Poppins'] mt-4 text-3xl sm:text-5xl font-extrabold leading-tight text-blue-400">
+              Powered by{" "}
               <a
                 href="https://lulal.ai/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block mx-auto lg:mx-0 w-fit bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 hover:underline transition duration-300"
+                className="inline-block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover:opacity-80 hover:underline transition duration-300"
               >
                 Lulal AI ↗
               </a>
             </h2>
 
-            <p className="mt-6 text-gray-400 text-sm sm:text-lg leading-7 sm:leading-9 max-w-xl mx-auto lg:mx-0">
-              Joas AI collaborates with Lulal AI to help organizations
-              successfully adopt enterprise artificial intelligence.
-              We focus on business consulting, deployment,
-              implementation, training and long-term support so
-              companies can unlock real business value through AI.
-            </p>
+            {/* DESCRIPTION PARAGRAPH */}
+            <p className="font-['Poppins'] mt-6 text-gray-400 text-sm sm:text-lg leading-7 sm:leading-9 max-w-xl mx-auto lg:mx-0 font-bold">
+  Joas AI collaborates with Lulal AI to help organizations
+  successfully adopt enterprise artificial intelligence.
+  We focus on business consulting, deployment,
+  implementation, training and long-term support so
+  companies can unlock real business value through AI.
+</p>
           </div>
 
           {/* RIGHT CONNECTIVITY GRAPHIC CARD */}

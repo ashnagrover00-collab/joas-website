@@ -36,12 +36,13 @@ export default function Trusted() {
                 
                 {/* Header Content */}
                 <div className="text-center">
-                    <p className="uppercase tracking-[4px] md:tracking-[6px] text-blue-400 text-xs sm:text-sm">
-                        WHY JOAS AI
-                    </p>
-                    <h2 className="mt-4 text-3xl sm:text-5xl font-bold leading-tight">
-                        Built Around Your Business.<br className="hidden sm:inline" /> Not The Other Way Around.
-                    </h2>
+                    <p className="font-['Poppins'] uppercase tracking-[4px] md:tracking-[6px] text-white text-[20px] sm:text-[24px] font-bold">
+  WHY JOAS AI
+</p>
+
+<h2 className="font-['Poppins'] mt-4 text-3xl sm:text-5xl font-extrabold leading-tight text-blue-400">
+  Built Around Your Business.<br className="hidden sm:inline" /> Not The Other Way Around.
+</h2>
                     <p className="text-gray-400 mt-4 md:mt-6 max-w-2xl mx-auto text-sm sm:text-base leading-7 sm:leading-8">
                         We help organizations securely integrate enterprise AI into existing workflows—making work faster, smarter, and scalable without disrupting the way teams work.
                     </p>
