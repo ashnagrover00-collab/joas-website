@@ -1,116 +1,137 @@
 import {
-  Bot,
-  FileText,
-  Workflow,
-  Shield,
-  Brain,
-  BarChart3
+  Clock3,
+  TrendingUp,
+  Target,
+  Expand,
+  UserRound,
 } from "lucide-react";
+
+const features = [
+  {
+    icon: Clock3,
+    title: "Save Valuable Time",
+    description:
+      "Automate repetitive work so teams can focus on what matters.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Higher Productivity",
+    description:
+      "Help every employee achieve more without increasing workload.",
+  },
+  {
+    icon: Target,
+    title: "Better Decisions",
+    description:
+      "Turn information into faster and smarter decisions.",
+  },
+  {
+    icon: Expand,
+    title: "Scale Without Complexity",
+    description:
+      "Expand AI across teams without disrupting operations.",
+  },
+  {
+    icon: UserRound,
+    title: "User Friendly Interface",
+    description:
+      "Simple, familiar and easy to use from day one.",
+  },
+];
 
 export default function BentoGrid() {
   return (
-    <section id="solutions" className="py-16 md:py-24 bg-[#050816] text-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-8">
+    <section className="relative overflow-hidden bg-[#050816] py-20">
 
-        {/* Section Header */}
-        <div className="mb-12 md:mb-20 text-center lg:text-left">
-          <p className="uppercase tracking-[4px] md:tracking-[6px] text-blue-400 text-xs sm:text-sm font-semibold">
-            OUR PLATFORM
-          </p>
-          <h2 className="text-3xl sm:text-5xl font-bold mt-4 leading-tight">
-            AI That Powers <br className="sm:hidden" /> Every Department
-          </h2>
+      {/* Background Glow */}
+      <div className="absolute left-0 top-40 h-72 w-72 rounded-full bg-cyan-500/10 blur-[140px]" />
+      <div className="absolute right-0 bottom-20 h-72 w-72 rounded-full bg-fuchsia-500/10 blur-[140px]" />
+
+      <div className="relative mx-auto max-w-7xl px-6">
+
+        {/* Header */}
+
+        <div className="mx-auto max-w-5xl text-center">
+
+         <p className="mb-8 text-center uppercase tracking-[0.35em] text-white text-lg sm:text-xl md:text-2xl font-semibold">
+  HOW JOAS DRIVES RESULTS
+</p>
+<h2
+  className="
+    mx-auto
+    max-w-4xl
+    text-center
+    font-semibold
+    leading-[1.15]
+    text-[#5EA2FF]
+    text-2xl
+    sm:text-3xl
+    md:text-4xl
+    lg:text-5xl
+  "
+  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+>
+  The best AI isn't another tool to manage—
+  <br className="hidden md:block" />
+  it's the one that keeps everything in one place.
+</h2>
+
+          <p
+  className="
+    mx-auto
+    mt-8
+    max-w-4xl
+    text-center
+    text-gray-400
+    leading-8
+
+    text-base
+    sm:text-lg
+    md:text-xl
+  "
+>
+  JOAS AI brings your tools, workflows and enterprise AI together in one
+  place, helping your team get more done with less effort.
+</p>
         </div>
 
-        {/* Responsive Bento Grid Matrix System */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-auto lg:auto-rows-[300px]">
-          
-          {/* CARD 1: Large Enterprise Assistants Box */}
-          <div className="md:col-span-2 lg:col-span-2 rounded-[24px] sm:rounded-[35px] bg-gradient-to-br from-blue-600 to-cyan-500 p-6 sm:p-10 flex flex-col justify-between min-h-[280px] lg:min-h-0">
-            <div>
-              <Bot size={48} className="sm:w-[55px] sm:h-[55px]" />
-              <h3 className="text-2xl sm:text-4xl font-bold mt-6 sm:mt-8 tracking-tight">
-                Enterprise AI Assistants
-              </h3>
-            </div>
-            <p className="mt-4 text-blue-100 text-sm sm:text-lg leading-6 sm:leading-8">
-              Deploy intelligent assistants capable of answering questions,
-              processing documents, automating repetitive work, and supporting
-              every team.
-            </p>
-          </div>
+        {/* Cards */}
 
-          {/* CARD 2: Document AI */}
-          <div className="rounded-[24px] sm:rounded-[35px] bg-[#101828] border border-white/10 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] lg:min-h-0">
-            <div>
-              <FileText size={36} sm:size={42} className="text-blue-400" />
-              <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
-                Document AI
-              </h3>
-            </div>
-            <p className="text-gray-400 mt-3 text-sm sm:text-base leading-relaxed">
-              Analyze reports, contracts, PDFs and knowledge instantly.
-            </p>
-          </div>
+        <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
 
-          {/* CARD 3: Automation */}
-          <div className="rounded-[24px] sm:rounded-[35px] bg-[#101828] border border-white/10 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] lg:min-h-0">
-            <div>
-              <Workflow size={36} sm:size={42} className="text-blue-400" />
-              <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
-                Automation
-              </h3>
-            </div>
-            <p className="text-gray-400 mt-3 text-sm sm:text-base leading-relaxed">
-              Replace repetitive manual work with intelligent workflows.
-            </p>
-          </div>
+{features.map((item, index) => {
+  const Icon = item.icon;
 
-          {/* CARD 4: Private AI */}
-          <div className="rounded-[24px] sm:rounded-[35px] bg-[#101828] border border-white/10 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] lg:min-h-0">
-            <div>
-              <Shield size={36} sm:size={42} className="text-blue-400" />
-              <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
-                Private AI
-              </h3>
-            </div>
-            <p className="text-gray-400 mt-3 text-sm sm:text-base leading-relaxed">
-              Enterprise-grade security and deployment.
-            </p>
-          </div>
+  return (
+    <div
+      key={index}
+      className="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400/50 hover:shadow-[0_0_35px_rgba(34,211,238,0.18)]"
+    >
+      {/* Glow */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-cyan-500/5 via-transparent to-fuchsia-500/5" />
 
-          {/* CARD 5: Knowledge AI */}
-          <div className="rounded-[24px] sm:rounded-[35px] bg-[#101828] border border-white/10 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] lg:min-h-0">
-            <div>
-              <Brain size={36} sm:size={42} className="text-blue-400" />
-              <h3 className="mt-6 text-xl sm:text-2xl font-semibold">
-                Knowledge AI
-              </h3>
-            </div>
-            <p className="text-gray-400 mt-3 text-sm sm:text-base leading-relaxed">
-              Connect company knowledge into one intelligent system.
-            </p>
-          </div>
+      {/* Icon */}
+      <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-[#1b2440] to-[#111827] border border-white/10 group-hover:border-cyan-400/40 transition-all duration-500">
 
-          {/* CARD 6: Large Business Intelligence Box */}
-          <div className="md:col-span-2 lg:col-span-2 rounded-[24px] sm:rounded-[35px] border border-white/10 bg-[#101828] p-6 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[280px] lg:min-h-0">
-            <div className="absolute right-0 top-0 w-48 h-48 sm:w-72 sm:h-72 bg-blue-600 blur-[80px] sm:blur-[120px] opacity-20 z-0"></div>
-            
-            <div className="relative z-10">
-              <BarChart3 size={42} sm:size={50} className="text-blue-400" />
-              <h3 className="text-2xl sm:text-4xl font-bold mt-6 sm:mt-8 tracking-tight">
-                Business Intelligence
-              </h3>
-            </div>
-            
-            <p className="text-gray-400 mt-4 text-sm sm:text-lg leading-6 sm:leading-8 max-w-xl relative z-10">
-              Turn enterprise data into meaningful insights using AI-powered
-              reporting, analytics, forecasting, and decision support.
-            </p>
-          </div>
+        <Icon className="h-10 w-10 text-cyan-400 group-hover:scale-110 transition-transform duration-500" />
 
-        </div>
+      </div>
 
+      {/* Title */}
+
+      <h3 className="relative z-10 mt-8 text-center text-2xl font-bold text-[#4F8FF7] leading-tight">
+        {item.title}
+      </h3>
+
+      {/* Description */}
+
+      <p className="relative z-10 mt-5 text-center text-gray-400 leading-8">
+        {item.description}
+      </p>
+    </div>
+  );
+})}
+</div>
       </div>
     </section>
   );
