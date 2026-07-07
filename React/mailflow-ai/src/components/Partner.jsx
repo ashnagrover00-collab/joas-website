@@ -123,12 +123,12 @@ export default function Partner() {
 
         {/* HOW WE HELP SECTION */}
         <div className="mt-20 md:mt-28">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-8 text-center lg:text-left">
-            How We Help{" "}
-            <span className="text-blue-400">
-              Organizations
-            </span>
-          </h3>
+          <h3 className="text-[26px] sm:text-[34px] font-bold mb-8 text-center lg:text-left">
+    How We Help{" "}
+    <span className="text-blue-400">
+      Organizations
+    </span>
+  </h3>
 
           {/* Responsive columns grid for services matrix mapping layout correctly across views */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-stretch">

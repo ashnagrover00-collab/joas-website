@@ -36,7 +36,7 @@ export default function Timeline() {
 
         {/* Section Header */}
         <div className="text-center">
-          <span className="inline-block rounded-full bg-blue-500/10 border border-blue-500/20 px-5 py-2.5 text-xs sm:text-sm tracking-[4px] text-blue-400 font-bold">
+          <span className="inline-block rounded-full bg-blue-500/10 border border-blue-500/20 px-5 py-2.5 text-[15px] sm:text-[16px] tracking-[4px] text-blue-400 font-bold">
             OUR PROCESS
           </span>
           <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mt-6 leading-tight">

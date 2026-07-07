@@ -57,7 +57,7 @@ export default function Trusted() {
                         >
                             <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400">
                                 {item.icon}
-                            </div>
+                            </div>  
                             <h3 className="text-xl sm:text-2xl font-semibold mt-6 sm:mt-8">
                                 {item.title}
                             </h3>

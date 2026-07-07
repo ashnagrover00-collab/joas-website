@@ -47,7 +47,7 @@ export default function Industries() {
 
         {/* Section Header */}
         <div className="text-center">
-          <p className="uppercase tracking-[4px] md:tracking-[6px] text-blue-400 text-xs sm:text-sm">
+          <p className="uppercase tracking-[4px] md:tracking-[6px] text-blue-400 text-[13px] sm:text-[19px]">
             WORKFLOW MATRIX
           </p>
           <h2 className="text-3xl sm:text-5xl font-bold mt-4 md:mt-6 leading-tight">

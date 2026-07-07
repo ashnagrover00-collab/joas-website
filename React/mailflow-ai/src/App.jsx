@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Trusted from "./components/Trusted";
 import BentoGrid from "./components/BentoGrid";
-import Stats from "./components/Stats";
+// import Stats from "./components/Stats";
 import Partner from "./components/Partner";
 import Industries from "./components/Industries";
 import Timeline from "./components/Timeline";
@@ -28,7 +28,7 @@ function App() {
       <BentoGrid />
 
       {/* Business Metrics */}
-      <Stats />
+      {/* <Stats /> */}
 
       {/* Official Partner Section */}
       <Partner />

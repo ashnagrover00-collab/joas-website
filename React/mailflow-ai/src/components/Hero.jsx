@@ -36,23 +36,25 @@ export default function Hero() {
   return (
     <>
       <style>{`
+        /* MOBILE ONLY: Calibrated radius values to lock dots directly onto the tracks */
         @keyframes orbitOuter {
-          from { transform: rotate(0deg)   translateY(-145px) rotate(0deg);   }
-          to   { transform: rotate(360deg) translateY(-145px) rotate(-360deg);}
+          from { transform: rotate(0deg)   translateY(-127px) rotate(0deg);   }
+          to   { transform: rotate(360deg) translateY(-127px) rotate(-360deg);}
         }
         @keyframes orbitOuter2 {
-          from { transform: rotate(180deg) translateY(-145px) rotate(-180deg);}
-          to   { transform: rotate(540deg) translateY(-145px) rotate(-540deg);}
+          from { transform: rotate(180deg) translateY(-127px) rotate(-180deg);}
+          to   { transform: rotate(540deg) translateY(-127px) rotate(-540deg);}
         }
         @keyframes orbitInner {
-          from { transform: rotate(0deg)    translateY(-120px) rotate(0deg);  }
-          to   { transform: rotate(-360deg) translateY(-120px) rotate(360deg);}
+          from { transform: rotate(0deg)    translateY(-103px) rotate(0deg);  }
+          to   { transform: rotate(-360deg) translateY(-103px) rotate(360deg);}
         }
         @keyframes orbitInner2 {
-          from { transform: rotate(180deg)  translateY(-120px) rotate(-180deg);}
-          to   { transform: rotate(-180deg) translateY(-120px) rotate(180deg); }
+          from { transform: rotate(180deg)  translateY(-103px) rotate(-180deg);}
+          to   { transform: rotate(-180deg) translateY(-103px) rotate(180deg); }
         }
 
+        /* LAPTOP KEYFRAMES: Left completely untouched */
         @media (min-width: 1024px) {
           @keyframes orbitOuter {
             from { transform: rotate(0deg)   translateY(-315px) rotate(0deg);   }
@@ -78,7 +80,7 @@ export default function Hero() {
 
       <section
         id="home"
-        className="relative min-h-screen flex items-center overflow-hidden bg-[#050816] py-16 lg:py-0"
+        className="relative min-h-screen flex items-center overflow-hidden bg-[#050816] py-10 lg:py-0"
       >
         {/* Background Glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -86,11 +88,11 @@ export default function Hero() {
           <div className="absolute -bottom-32 -right-32 lg:-bottom-64 lg:-right-64 w-[350px] lg:w-[700px] h-[350px] lg:h-[700px] rounded-full bg-cyan-500/20 blur-[100px] lg:blur-[200px]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-24 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-10 lg:pt-24 grid lg:grid-cols-2 gap-8 lg:gap-20 items-center w-full">
 
           {/* LEFT SIDE CONTENT */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            <div className="inline-flex items-center gap-1 px-5 py-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300 text-xs sm:text-sm mb-6 lg:mb-8">
+            <div className="inline-flex items-center gap-1 px-4 py-1.5 rounded-full border border-cyan-500/20 bg-cyan-500/10 text-cyan-300 text-xs sm:text-sm mb-4 lg:mb-8">
               <span>Global Partner of</span>
               <a href="https://lulal.ai/" target="_blank" rel="noopener noreferrer"
                 className="font-semibold underline hover:text-white transition">
@@ -99,30 +101,30 @@ export default function Hero() {
             </div>
 
             <motion.h1
-              className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white"
+              className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white tracking-tight"
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
               Your
-              <span className="block mt-2 bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]">
+              <span className="block mt-1 bg-gradient-to-r from-cyan-300 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(34,211,238,0.6)]">
                 Digital Workforce
               </span>
-              <span className="block mt-2">Starts Here</span>
+              <span className="block mt-1">Starts Here</span>
             </motion.h1>
 
-            <p className="mt-6 lg:mt-8 mb-6 text-[22px] sm:text-[26px] font-bold text-cyan-400 leading-8 max-w-lg mx-auto lg:mx-0">
-            Every task. Another tab. Another AI tool. Tired of it?
-           </p>
+            <p className="mt-3 lg:mt-8 mb-2 text-[15px] sm:text-[22px] lg:text-[26px] font-bold text-cyan-400 leading-snug sm:leading-8 max-w-lg mx-auto lg:mx-0">
+              Every task. Another tab. Another AI tool. Tired of it?
+            </p>
 
-            <p className="mt-3 text-[17px] sm:text-[18px] font-semibold text-gray-300 leading-7 max-w-lg mx-auto lg:mx-0">
-  JOAS AI brings powerful AI into the tools your team already uses—helping you write emails, analyze documents, automate tasks and work faster without changing the way you work. Choose the AI model that fits your business, from leading LLMs to your own private AI.
-</p>
+            <p className="mt-1 text-[13px] sm:text-[16px] lg:text-[18px] font-normal text-gray-300 leading-relaxed sm:leading-7 max-w-md sm:max-w-lg mx-auto lg:mx-0">
+              JOAS AI brings powerful AI into the tools your team already uses—helping you write emails, analyze documents, automate tasks and work faster without changing the way you work. Choose the AI model that fits your business, from leading LLMs to your own private AI.
+            </p>
 
-            <div className="mt-8 lg:mt-10">
+            <div className="mt-6 lg:mt-10">
               <button
                 onClick={() => setOpen(true)}
-                className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold transition hover:scale-105"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white font-semibold text-sm sm:text-base transition hover:scale-105"
               >
                 Book Consultation
               </button>
@@ -130,8 +132,8 @@ export default function Hero() {
           </div>
 
           {/* RIGHT SIDE GRAPHIC */}
-          <div className="flex justify-center items-center px-4 order-1 lg:order-2 w-full overflow-hidden">
-            <div className="relative w-[300px] h-[300px] sm:w-[330px] sm:h-[330px] lg:w-[680px] lg:h-[680px] flex items-center justify-center transition-all">
+          <div className="flex justify-center items-center px-4 order-1 lg:order-2 w-full">
+            <div className="relative w-[280px] h-[280px] sm:w-[330px] sm:h-[330px] lg:w-[680px] lg:h-[680px] flex items-center justify-center transition-all">
 
               {/* OUTER RING */}
               <div
@@ -152,57 +154,69 @@ export default function Hero() {
               <div className="absolute inset-[52px] lg:inset-[108px] rounded-full border border-cyan-400/40 bg-[#09111f]/90 backdrop-blur-xl shadow-[0_0_40px_rgba(34,211,238,.1)] lg:shadow-[0_0_80px_rgba(34,211,238,.15)]">
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-14">
                   <div>
-                    <h2 className="text-xs sm:text-xs lg:text-3xl font-bold text-white tracking-wide">One Platform</h2>
-                    <h2 className="text-xs sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Every Workflow</h2>
+                    <h2 className="text-[10px] sm:text-xs lg:text-3xl font-bold text-white tracking-wide">One Platform</h2>
+                    <h2 className="text-[9px] sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Every Workflow</h2>
                   </div>
                   <div className="w-12 lg:w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-1.5 lg:my-6" />
                   <div>
-                    <h2 className="text-xs sm:text-xs lg:text-3xl font-bold text-white tracking-wide">No Switching</h2>
-                    <h2 className="text-xs sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Click</h2>
+                    <h2 className="text-[10px] sm:text-xs lg:text-3xl font-bold text-white tracking-wide">No Switching</h2>
+                    <h2 className="text-[9px] sm:text-xs lg:text-2xl font-semibold mt-0.5 lg:mt-1 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">One Click</h2>
                   </div>
                   <div className="w-12 lg:w-40 h-px bg-gradient-to-r from-transparent via-cyan-400 to-transparent my-1.5 lg:my-6" />
                   <div>
-                    <h2 className="text-xs sm:text-xs lg:text-2xl font-bold text-gray-300 uppercase tracking-widest">We Handle</h2>
-                    <h2 className="text-xs sm:text-xs lg:text-3xl font-black mt-0.5 lg:mt-1 bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">The Rest</h2>
+                    <h2 className="text-[9px] sm:text-xs lg:text-2xl font-bold text-gray-300 uppercase tracking-widest">We Handle</h2>
+                    <h2 className="text-[10px] sm:text-xs lg:text-3xl font-black mt-0.5 lg:mt-1 bg-gradient-to-r from-cyan-300 to-blue-500 bg-clip-text text-transparent">The Rest</h2>
                   </div>
                 </div>
               </div>
 
-              {/* DOT 1 — outer ring */}
+              {/* DOT 1 */}
               <div style={{
-                position:"absolute", width:8, height:8, borderRadius:"50%",
-                background:"#22d3ee", boxShadow:"0 0 15px #22d3ee",
-                top:"50%", left:"50%", marginTop:-4, marginLeft:-4,
-                transformOrigin:"0 0",
+                position:"absolute",
+                borderRadius:"50%",
+                background:"#22d3ee", 
+                boxShadow:"0 0 20px #22d3ee, 0 0 40px #22d3ee",
+                top:"50%", 
+                left:"50%",
+                transform: "translate(-50%, -50%)",
                 animation:"orbitOuter 48s linear infinite",
-              }} className="sm:w-[10px] sm:h-[10px] sm:-mt-1 sm:-ml-1 lg:w-[15px] lg:h-[15px] lg:-mt-[7.5px] lg:-ml-[7.5px]" />
+              }} className="w-2 h-2 -mt-1 -ml-1 lg:w-4 lg:h-4 lg:-mt-2 lg:-ml-2" />
 
-              {/* DOT 2 — outer ring */}
+              {/* DOT 2 */}
               <div style={{
-                position:"absolute", width:8, height:8, borderRadius:"50%",
-                background:"#22d3ee", boxShadow:"0 0 15px #22d3ee",
-                top:"50%", left:"50%", marginTop:-4, marginLeft:-4,
-                transformOrigin:"0 0",
+                position:"absolute",
+                borderRadius:"50%",
+                background:"#22d3ee", 
+                boxShadow:"0 0 20px #22d3ee, 0 0 40px #22d3ee",
+                top:"50%", 
+                left:"50%",
+                transform: "translate(-50%, -50%)",
                 animation:"orbitOuter2 48s linear infinite",
-              }} className="sm:w-[10px] sm:h-[10px] sm:-mt-1 sm:-ml-1 lg:w-[15px] lg:h-[15px] lg:-mt-[7.5px] lg:-ml-[7.5px]" />
+              }} className="w-2 h-2 -mt-1 -ml-1 lg:w-4 lg:h-4 lg:-mt-2 lg:-ml-2" />
 
-              {/* DOT 3 — inner ring */}
+              {/* DOT 3 */}
               <div style={{
-                position:"absolute", width:8, height:8, borderRadius:"50%",
-                background:"#3b82f6", boxShadow:"0 0 15px #3b82f6",
-                top:"50%", left:"50%", marginTop:-4, marginLeft:-4,
-                transformOrigin:"0 0",
+                position:"absolute",
+                borderRadius:"50%",
+                background:"#3b82f6", 
+                boxShadow:"0 0 20px #3b82f6, 0 0 40px #3b82f6",
+                top:"50%", 
+                left:"50%",
+                transform: "translate(-50%, -50%)",
                 animation:"orbitInner 35s linear infinite",
-              }} className="sm:w-[10px] sm:h-[10px] sm:-mt-1 sm:-ml-1 lg:w-[15px] lg:h-[15px] lg:-mt-[7.5px] lg:-ml-[7.5px]" />
+              }} className="w-2 h-2 -mt-1 -ml-1 lg:w-4 lg:h-4 lg:-mt-2 lg:-ml-2" />
 
-              {/* DOT 4 — inner ring */}
+              {/* DOT 4 */}
               <div style={{
-                position:"absolute", width:8, height:8, borderRadius:"50%",
-                background:"#3b82f6", boxShadow:"0 0 15px #3b82f6",
-                top:"50%", left:"50%", marginTop:-4, marginLeft:-4,
-                transformOrigin:"0 0",
+                position:"absolute",
+                borderRadius:"50%",
+                background:"#3b82f6", 
+                boxShadow:"0 0 20px #3b82f6, 0 0 40px #3b82f6",
+                top:"50%", 
+                left:"50%",
+                transform: "translate(-50%, -50%)",
                 animation:"orbitInner2 35s linear infinite",
-              }} className="sm:w-[10px] sm:h-[10px] sm:-mt-1 sm:-ml-1 lg:w-[15px] lg:h-[15px] lg:-mt-[7.5px] lg:-ml-[7.5px]" />
+              }} className="w-2 h-2 -mt-1 -ml-1 lg:w-4 lg:h-4 lg:-mt-2 lg:-ml-2" />
 
             </div>
           </div>
